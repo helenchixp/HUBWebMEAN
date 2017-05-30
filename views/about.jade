@@ -1,0 +1,29 @@
+extends layout
+
+block content
+
+  
+  h2 #{title}
+  h3 #{message}
+  p Use this area to provide additional information.
+  
+  p
+  
+  div(ng-app='HUBWebApp.about')
+    ul(ng-controller='AboutController')
+     li(ng-repeat='detail in list')
+        h4 {{detail.name}}
+        encrypt-list
+
+
+    ul(ng-controller='About2Controller')
+     li(ng-repeat='detail in list')
+        h5 {{detail.name}} ( {{detail.version}} )
+       
+
+    encrypt-list
+
+
+  script(src='/controller/about.js')
+
+   

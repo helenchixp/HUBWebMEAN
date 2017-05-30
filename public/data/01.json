@@ -1,0 +1,20 @@
+﻿
+    {
+        "salary": 5,
+        "no": "01",
+        "name": "Osomatsu",
+        "phone": "01-010-011",
+        "email": "osomatsu@matsuno.com",
+        "images": [
+            "images/01.png",
+            "images/01_02.png",
+            "images/01_03.png",
+            "images/01_04.png"
+        ],
+        "occupation": {
+            "title": "CEO",
+            "company": "IBW",
+            "address": "Akiba",
+            "result": true
+        }
+    }

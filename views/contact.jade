@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  //script(src='/controller/app.js')
+  //script(src='/controller/app.config.js')
+  script(src='/angular-resource/angular-resource.js')
+  script(src='/controller/contact.service.js')
+  script(src='/controller/contact.js')
+   
+  script(src='/controller/contact-detail.module.js')
+  script(src='/controller/contact-detail.js')
+
+  h2 #{title}
+  h3 #{message}
+
+  //div(ng-app='HUBWebApp.contact' class='container-fluid')
+  //   contact-list
+
+  div(ng-app='HUBWebApp.contact' ui-view class='container-fluid')
+    
+

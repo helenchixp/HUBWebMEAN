@@ -1,0 +1,58 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <!--Sidebar content-->
+            <div class="col-md-2">
+                Search:
+            </div>
+            <div class="col-md-4">
+                <input class="form-control" ng-model="$ctrl.search" />
+            </div>
+        </div>
+        <div class="col-md-12">
+            <!--Sidebar content-->
+            <div class="col-md-2">
+                Sort by:
+            </div>
+            <div class="col-md-4">
+                <select ng-model="$ctrl.orderProp" class="form-control">
+                    <option value="no">By Number</option>
+                    <option value="name">by Name</option>
+                    <option value="phone">by Telephone</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-10">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Name</td>
+                        <td>Phone</td>
+                        <td>Email</td>
+                        <td>Salary</td>
+                    </tr>
+                </thead>
+                <tbody class="userlist">
+                    <tr ng-repeat="user in $ctrl.userlist | filter:$ctrl.search | orderBy:$ctrl.orderProp" class="info">
+                        <td>
+                            <a href="#!/detail/{{user.no}}">
+                                <img src="images/{{user.no}}.png" width="40" height="40" alt="{{user.name}}" />
+                            </a>
+                        </td>
+                        <td>
+                            <a ui-sref="detail">
+                                {{user.name}}
+                            </a>
+                        </td>
+                        <td>{{user.phone}}</td>
+                        <td><a href="{{user.email}}">{{user.email}}</a></td>
+                        <td>{{user.salary}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

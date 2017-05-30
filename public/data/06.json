@@ -1,0 +1,20 @@
+﻿
+    {
+        "salary": 9,
+        "no": "06",
+        "name": "Todomatsu",
+        "phone": "044-060-066",
+        "email": "todomatsu@matsuno.net",
+        "images": [
+            "images/06.png",
+            "images/06_02.png",
+            "images/06_03.png",
+            "images/06_04.png"
+        ],
+        "occupation": {
+            "title": "CEO",
+            "company": "IBW",
+            "address": "Akiba",
+            "result": true
+        }
+    }

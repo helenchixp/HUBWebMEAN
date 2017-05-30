@@ -1,0 +1,34 @@
+{
+  "name": "hubweb-mean",
+  "version": "0.0.0",
+  "description": "HUBWebMEAN",
+  "main": "app.js",
+  "author": {
+    "name": "H8019210"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "3.4.4",
+    "jade": "*",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7",
+    "stylus": "*"
+  },
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-mocks": "^1.6.4",
+    "angular-resource": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "grunt-protractor-runner": "^5.0.0",
+    "jasmine-core": "^2.6.1",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-coffee-preprocessor": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.3",
+    "karma-spec-reporter": "0.0.31",
+    "protractor": "^5.1.2"
+  }
+}

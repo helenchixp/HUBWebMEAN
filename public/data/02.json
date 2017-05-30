@@ -1,0 +1,17 @@
+﻿
+    {
+        "salary": 12,
+        "no": "02",
+        "name": "Karamatsu",
+        "phone": "0081-020-022",
+        "email": "karamatsu@matsuno.net",
+        "images": [
+            "images/02.png"
+        ],
+        "occupation": {
+            "title": "CEO",
+            "company": "IBW",
+            "address": "Akiba",
+            "result": true
+        }
+    }

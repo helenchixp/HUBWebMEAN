@@ -1,0 +1,17 @@
+﻿
+    {
+        "salary": 33,
+        "no": "11",
+        "name": "Totoko____",
+        "phone": "01234565",
+        "email": "totoko@karifamily.net",
+        "images": [
+            "images/11.png"
+        ],
+        "occupation": {
+            "title": "CEO",
+            "company": "IBW",
+            "address": "Akiba",
+            "result": true
+        }
+    }
