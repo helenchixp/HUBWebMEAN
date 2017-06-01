@@ -59,17 +59,24 @@ angular.module('HUBWebApp.contact', [
                 var self = this;
 
                 console.log("$stateParams.no :" + $stateParams.no);
-              
-                self.user = Brothers.get({
-                    no: $stateParams.no
-                }, function (user) {
-                    self.main_image(user.images[0]);
-                });
-               
+
+                self.reset = function () {
+
+                    console.log("[reset()] $stateParams.no" + $stateParams.no);
+
+                    self.user = Brothers.get({
+                        no: $stateParams.no
+                    }, function (user) {
+                        self.main_image(user.images[0]);
+                    });
+                };
 
                 self.main_image = function main_image(imgurl) {
                     self.main_imageURL = imgurl;
                 };
+
+
+                self.reset();
           }
         ]
       

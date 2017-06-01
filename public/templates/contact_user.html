@@ -49,7 +49,16 @@
                         </td>
                         <td>{{user.phone}}</td>
                         <td><a href="{{user.email}}">{{user.email}}</a></td>
-                        <td>{{user.salary}}</td>
+                        <td>
+                       
+                            <div class="col-lg-10">
+                                <input class="form-control" name="salary" type="text" ng-model="user.salary" required/>
+                                <span style="color:red" ng-show="salary.$dirty && salary.$invalid">
+                                    <span ng-show="salary.$error.required">The salary is required!</span>
+                                </span>
+                            </div>
+                       
+                        </td>
                     </tr>
                 </tbody>
             </table>
